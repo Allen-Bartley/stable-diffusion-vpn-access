@@ -12,7 +12,7 @@ Stable Diffusion is notoriously resource-intensive. This setup enables remote im
 
 ## 🧰 Hardware & Software Configuration
 
-### 🖥️ Host Machine – "Project Horizons" (Gaming PC)
+### 🖥️ Host Machine – "Rose Red" (Gaming PC)
 
 | Component | Details |
 |-----------|--------|
@@ -23,7 +23,7 @@ Stable Diffusion is notoriously resource-intensive. This setup enables remote im
 | Remote Access | TeamViewer + Chrome Remote Desktop |
 | File Access | Shared output folder via local account |
 
-### 💻 Client Machine – "Rose Red" (Laptop)
+### 💻 Client Machine – "Project Horizons" (Laptop)
 
 | Component | Details |
 |-----------|--------|
@@ -46,6 +46,19 @@ Stable Diffusion is notoriously resource-intensive. This setup enables remote im
    - Accessed the host’s Stable Diffusion UI via browser at `Hamachi_IP:PORT`
    - Initiated image generation tasks remotely
    - Used **Hamachi “Browse” feature** to access shared folder after signing in with local credentials
+
+---
+
+## 🧠 Hybrid Compute Architecture
+
+This project evolved from early LAN gaming setups using Hamachi (e.g., Apprentice/MTG) into a modern hybrid compute model for AI workloads. When the laptop’s hardware proved insufficient for local image generation, I engineered a distributed system that:
+
+- Offloads Stable Diffusion processing to a remote gaming PC
+- Uses Hamachi VPN to simulate a secure LAN environment
+- Implements credentialed SMB file sharing for output retrieval
+- Enables full job orchestration from a thin client interface
+
+> This isn’t just a workaround—it’s a continuation of a 15+ year systems mindset. The same tool that once enabled multiplayer Magic: The Gathering now powers distributed AI workflows. It reflects a consistent ability to bridge technical constraints with creative, secure solutions.
 
 ---
 
