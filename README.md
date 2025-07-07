@@ -49,6 +49,28 @@ Stable Diffusion is notoriously resource-intensive. This setup enables remote im
 
 ---
 
+## 🧠 Startup Script & VPN Behavior
+
+This project includes a lightweight Windows batch script used to launch the AUTOMATIC1111 Stable Diffusion WebUI in a VPN-accessible environment.
+
+### 📄 `launch_sd.bat`
+
+```batch
+@echo off
+REM Startup script for launching Stable Diffusion WebUI (AUTOMATIC1111)
+REM Custom flags set for performance and compatibility
+REM Used in VPN-accessible lab environment
+
+set PYTHON=
+set GIT=
+set VENV_DIR=
+set COMMANDLINE_ARGS=--opt-sdp-attention --no-half-vae --opt-channelslast --listen --skip-python-version-check --autolaunch
+
+git pull
+
+call webui.bat
+
+
 ## 🧠 Hybrid Compute Architecture
 
 This project evolved from early LAN gaming setups using Hamachi (e.g., Apprentice/MTG) into a modern hybrid compute model for AI workloads. When the laptop’s hardware proved insufficient for local image generation, I engineered a distributed system that:
