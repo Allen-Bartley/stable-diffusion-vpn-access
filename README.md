@@ -69,7 +69,8 @@ set COMMANDLINE_ARGS=--opt-sdp-attention --no-half-vae --opt-channelslast --list
 git pull
 
 call webui.bat
-
+```
+---
 
 ## 🧠 Hybrid Compute Architecture
 
