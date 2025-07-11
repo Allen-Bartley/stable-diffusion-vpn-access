@@ -10,6 +10,12 @@ Stable Diffusion is notoriously resource-intensive. This setup enables remote im
 
 ---
 
+## 🎯 Motivation
+
+This project was born out of a desire to use locally-hosted Stable Diffusion models without relying on paywalled or usage-limited online generation platforms. By building a VPN-based access system around my GPU-equipped desktop, I achieved unrestricted image generation from a less powerful laptop—maximizing hardware efficiency, privacy, and cost control. It’s a continuation of my long-term systems-thinking mindset and a response to real limitations in consumer AI services.
+
+---
+
 ## 🧰 Hardware & Software Configuration
 
 ### 🖥️ Host Machine – "Rose Red" (Gaming PC)
